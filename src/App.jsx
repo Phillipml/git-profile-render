@@ -13,11 +13,7 @@ function App() {
     <>
       <div className="searchUserName">
         <h2>Pesquise o nome do seu usuário Github</h2>
-        <input
-          type="text"
-          className="userName"
-          onBlur={(e) => setNomeUsuario(e.target.value)}
-        />
+        <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
       </div>
 
       {nomeUsuario.length > 4 && (
