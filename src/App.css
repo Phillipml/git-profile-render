@@ -1,0 +1,34 @@
+.searchUserName {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchUserName input {
+  width: 50%;
+  margin: 5%;
+  background-color: var(--background-color);
+  border: unset;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  text-align: center;
+  animation: borderBlink 1s ease-in-out infinite;
+}
+.searchUserName input:focus {
+  outline: none;
+}
+@keyframes borderBlink {
+  0% {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  50% {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+}
+.searchUserName h2 {
+  padding: 2%;
+}

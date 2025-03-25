@@ -1,0 +1,52 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+h1 {
+  text-align: center;
+}
+
+.listItem {
+  list-style: none;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.itemName b,
+.itemLanguage b {
+  margin-right: 8px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.listItem {
+  list-style: none;
+  padding: 16px;
+  background-color: rgb(55, 36, 66);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.itemName b,
+.itemLanguage b {
+  margin-right: 8px;
+}
+
+.itemLink {
+  display: block;
+  background-color: var(--primaryColor);
+  text-align: center;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+.itemLink:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
