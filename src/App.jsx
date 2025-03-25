@@ -3,6 +3,7 @@ import { useState } from "react";
 import Profile from "./components/Profile";
 import Form from "./components/Form";
 import ReposList from "./components/ReposList";
+import "./App.css";
 
 function App() {
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true);
